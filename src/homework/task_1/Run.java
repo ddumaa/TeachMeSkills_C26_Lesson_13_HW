@@ -4,7 +4,6 @@ import homework.task_1.customException.WrongLoginException;
 import homework.task_1.customException.WrongPasswordException;
 import homework.task_1.registration.Registration;
 
-import java.util.Locale;
 import java.util.Scanner;
 
 public class Run {
