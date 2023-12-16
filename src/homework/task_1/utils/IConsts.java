@@ -1,5 +1,5 @@
 package homework.task_1.utils;
 
-public interface EConsts {
+public interface IConsts {
     int LENGTH = 20;
 }
