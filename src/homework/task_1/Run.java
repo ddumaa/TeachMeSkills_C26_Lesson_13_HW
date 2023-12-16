@@ -18,13 +18,11 @@ public class Run {
         String confirmPassword = scanner.nextLine();
 
         try {
-            registration = Registration.newUser(login, password, confirmPassword);
+            registration = Registration.newUserRegistration(login, password, confirmPassword);
         } catch (WrongLoginException e) {
-            System.out.println("The login does not match the required parameters, it is more than 20 characters or has spaces");
+            System.out.println("the login does not match the required parameters, it is more than 20 characters or has spaces");
         } catch (WrongPasswordException e) {
-            System.out.println("The password does not meet the required parameters, it is more than 20 characters, does not have numbers or has spaces");
-        } catch (Exception e) {
-            System.out.println("Password mismatch");
+            System.out.println("the password does not meet the required parameters, it is more than 20 characters, does not have numbers or has spaces.\nOr your passwords do not match");
         }
 
         if(registration == true){
